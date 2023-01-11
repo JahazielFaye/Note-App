@@ -53,7 +53,7 @@ app.post("/api/notes", (req, res) => {
       } else {
         const parsedNote = JSON.parse(data); //jsonifying obj data
 
-        //to input new notes
+        //to input new notes here
         parsedNote.push(newNote);
 
         //add new notes to db folder
