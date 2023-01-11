@@ -16,7 +16,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 //Allows us to go through public folder
-app.use(express.static("public"));
+app.use(express.static("./Develop/public"));
 
 //GET Modular Routing here <---->
 app.get("/", (req, res) => {
