@@ -20,11 +20,11 @@ app.use(express.static("public"));
 
 //GET Modular Routing here <---->
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "./public/index.html"));
+  res.sendFile(path.join(__dirname, "./Develop/public/index.html"));
 });
-
+=
 app.get("/notes", (req, res) => {
-  res.sendFile(path.join(__dirname, "./public/notes.html"));
+  res.sendFile(path.join(__dirname, "./Develop/public/notes.html"));
 });
 
 app.get("/api/notes", (req, res) => {
@@ -47,7 +47,7 @@ app.post("/api/notes", (req, res) => {
     };
 
     //Loads the existing notes
-    fs.readFile("./db/db.json", "utf8", (err, data) => {
+    fs.readFile("./Develop/db/db.json", "utf8", (err, data) => {
       if (err) {
         console.log(err);
       } else {
@@ -58,7 +58,7 @@ app.post("/api/notes", (req, res) => {
 
         //add new notes to db folder
         fs.writeFile(
-          "./db/db.json",
+          "./Develop/db/db.json",
           JSON.stringify(parsedNote),
           null,
           (err) => {
