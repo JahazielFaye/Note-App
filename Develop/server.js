@@ -46,7 +46,7 @@ app.post("/api/notes", (req, res) => {
       id: uniqid(),
     };
 
-    //loads the existing notes
+    //Loads the existing notes
     fs.readFile("./db/db.json", "utf8", (err, data) => {
       if (err) {
         console.log(err);
