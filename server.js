@@ -4,7 +4,7 @@ const path = require("path");
 const fs = require("fs");
 const uniqid = require("uniqid");
 
-const dbJ = require("./db/db.json");
+const dbJ = require("./Develop/db/db.json");
 
 //Local host PORT
 const PORT = process.env.PORT || 3001;
