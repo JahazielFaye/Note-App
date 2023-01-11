@@ -2,7 +2,7 @@
 const express = require("express");
 const path = require("path");
 const fs = require("fs");
-const uniqid = require('uniqid');
+const uniqid = require("uniqid");
 
 const dbJ = require("./db/db.json");
 
@@ -51,7 +51,7 @@ app.post("/api/notes", (req, res) => {
       if (err) {
         console.log(err);
       } else {
-        const parsedNote = JSON.parse(data);
+        const parsedNote = JSON.parse(data); //jsonifying obj data
 
         //to input new notes
         parsedNote.push(newNote);
@@ -59,7 +59,8 @@ app.post("/api/notes", (req, res) => {
         //add new notes to db folder
         fs.writeFile(
           "./db/db.json",
-          JSON.stringify(parsedNote, null),
+          JSON.stringify(parsedNote),
+          null,
           (err) => {
             err
               ? console.error(err)
@@ -72,13 +73,26 @@ app.post("/api/notes", (req, res) => {
       status: "Success",
       body: newNote,
     };
+
     console.log(response);
     res.status(201).json(response);
   } else {
     res.status(500).json("Error in posting New Notes");
   }
 });
+// TODO : Bonus: DELETE METHOD
+
+// app.delete('/api/notes/:id', (req, res) => {
+//     const id = req.params.id
+//     const newNotes = db.filter(el => el.id != id)
+//     notes = newNotes
+
+//     res.send({
+//         success: true,
+//         message: "Note Deleted Successfully!"
+//     })
+// })
 
 app.listen(PORT, () =>
-  console.log(`App listening at http://localhost:${PORT} 🚀`)
+  console.log(`App Serving at http://localhost:${PORT} 🚀`)
 );
