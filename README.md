@@ -14,3 +14,17 @@
 
 # Installation
 You can access the App using Heroku
+
+https://jotdownnotes.herokuapp.com/
+
+# Usage
+ 
+*Input your title, jot down notes and save button available to save notes*
+
+# Questions
+
+-Any further questions regarding app. 
+connect here --->
+GitHub: https://github.com/JahazielFaye
+Email: hazelponsaran@gmail.com
+

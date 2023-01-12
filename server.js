@@ -80,8 +80,9 @@ app.post("/api/notes", (req, res) => {
     res.status(500).json("Error in posting New Notes");
   }
 });
+
 //TODO : Bonus: DELETE METHOD
-// matt was here here
+
 // app.delete('/api/notes/:id', (req, res) => {
 //     const id = req.params.id
 //     const newNotes = db.filter(el => el.id != id)
