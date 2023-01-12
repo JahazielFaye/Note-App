@@ -18,8 +18,15 @@ You can access the App using Heroku
 https://jotdownnotes.herokuapp.com/
 
 # Usage
- 
 *Input your title, jot down notes and save button available to save notes*
+
+ *Live URL: https://jahazielfaye.github.io/Note-App/
+
+![Screenshot Usage](./Develop/public/assets/Landing-page.png)
+
+![Screenshot Usage](./Develop/public/assets/Test.png)
+
+
 
 # Questions
 
