@@ -22,11 +22,18 @@ https://jotdownnotes.herokuapp.com/
 
  *Live URL: https://jahazielfaye.github.io/Note-App/
 
+ *GitHub URL: https://github.com/JahazielFaye/Note-App
+
 ![Screenshot Usage](./Develop/public/assets/Landing-page.png)
 
 ![Screenshot Usage](./Develop/public/assets/Test.png)
 
 
+# License
+N/A
+
+# Contributions
+N/A
 
 # Questions
 
