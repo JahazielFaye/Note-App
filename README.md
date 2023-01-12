@@ -39,6 +39,8 @@ N/A
 
 -Any further questions regarding app. 
 connect here --->
+
 GitHub: https://github.com/JahazielFaye
+
 Email: hazelponsaran@gmail.com
 
